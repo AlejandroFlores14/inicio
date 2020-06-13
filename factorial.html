@@ -2,11 +2,10 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Inicio</title>
+	<title>Factorial</title>
 	<link rel="stylesheet" type="text/css" href="css/e2.css"/>
 </head>
-<body>
-	<header>
+<header>
 	
 	<img src="img/logo.png" id="cabe"><h1 id="titu">Wallpapers</h1>
 		<nav id="menuP">
@@ -28,22 +27,28 @@
 		</nav>
 		
 	</header>
+<body>
+	<center>
+	<section>
+		<p id="respuesta"></p>
+	</section>
+		
+	<script type="text/javascript">
+		var i=prompt("Ingrese numero para factorial");
+		var i1=1;
 
-	<center><h1>Indice</h1></center>
-	<br><br>
-	<center><a href= "ej1.html"><h2>Ejercicio 1 - Crear Cajas</h2> </a></center>
-		<br><br>
-		<center><a href= "ejer2.html"><h2>Ejercicio 2 - Votar</h2> </a></center>
-		<br><br>
-		<center><a href= "ejer3.html"><h2>Ejercicio 3 - Sumar Números Positivos</h3> </a></center>
-		<br><br>
-		<center><a href= "calcu.html"><h2>Calculadora</h2> </a></center>
-		<br><br>
-		<center><a href= "factorial.html"><h2>Factorial</h2> </a></center>
-		<br><br>
+		while(i !=0)
+            {
+                var i1 = i1 * i;
+                i--;
+                document.getElementById("respuesta").innerHTML="El factorial es : "+i1;
+            }
+		
 
+</script>
+</center>
 
-  <footer > 
+<footer > 
     <section id="izq">
       <p id="top">Bernardo Alejandro Sánchez Flores</p>
       <p>12/06/2020</p>
@@ -57,6 +62,5 @@
     </section>
 
   </footer>
-		
 </body>
 </html>
